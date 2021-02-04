@@ -13,7 +13,7 @@ execute unless entity @s[tag=bc_player_dest] run title @s subtitle [{"text":"WAR
 # - they are the destination player
 # - there is no one on red
 # => they are waiting for someone to step on red and teleport to us
-execute if entity @s[tag=bc_player_dest] unless entity @a[tag=on_red] run title @s subtitle {"text":"Waiting for a player to warp here..."}
+execute if entity @s[tag=bc_player_dest] unless entity @a[tag=on_red] run title @s subtitle [{"text":"Waiting for a player on "},{"text":"red","color":"red","bold":true},{"text":" to warp here...","color":"white","bold":false}]
 
 # - they are the destination player
 # - there is someone on red

@@ -8,7 +8,7 @@ title @s times 1 2000 10
 
 # - there is no destination player
 # => they're waiting for a destination player
-execute unless entity @a[tag=bc_player_dest] run title @s subtitle {"text":"Waiting for a player to warp too..."}
+execute unless entity @a[tag=bc_player_dest] run title @s subtitle [{"text":"Waiting for a player on "},{"text":"green","color":"#6b991c","bold":true},{"text":" to warp to...","color":"white","bold":false}]
 
 # - there is a destination player
 # => they're teleporting to them

@@ -25,8 +25,6 @@ black
 
 
 TODO:
-- fix 2 not being able to be on a carpet at the same time
-
 - purple carpets
 
 - different tp points for different dimensions OR NOT AT ALL
@@ -41,10 +39,12 @@ TODO:
 IDEAS/IMPROVEMENTS:
 - if `pvp` team is implemented then red/action needs to be updated
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
-- red/green should say "waiting for player ON RED" and "waiting for player ON GREEN"
+
 
 
 COMPLETED:
+- fix 2 not being able to be on a carpet at the same time
+- red/green should say "waiting for player ON RED" and "waiting for player ON GREEN"
 - header comments in EVERY file CODE TOO
 - generate_carpets.py should delete folders first then generate them
 - fix template files coming up in the server log
