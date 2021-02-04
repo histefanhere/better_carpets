@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-# Generate the very similar carpets:
 
-import os
+# Generate all the mcfunction command functions for all the "instant teleport" carpets.
+# These carpets, if a condition is met (which is handled in registries), instantly begin teleportation of the player.
+# Such carpets include the white spawn carpet, yellow wilderness carpet, and ALL home carpets.
+
+import os, shutil
 
 class Carpet:
     def __init__(self, name, colour, title, tag):
@@ -12,17 +15,19 @@ class Carpet:
     
     def template(self, text):
         out = text
-        out = out.replace('%NAME%', self.name)
-        out = out.replace('%COLOUR%', self.colour)
-        out = out.replace('%TITLE%', self.title)
-        out = out.replace('%TAG%', self.tag)
+        out = out.replace('template_name', self.name)
+        out = out.replace('template_colour', self.colour)
+        out = out.replace('template_title', self.title)
+        out = out.replace('template_tag', self.tag)
         return out
 
 def main():
     for carpet in carpets:
         print(carpet.name)
 
-        # REMOVE FIRSTFFFFFFFFF
+        # Firstly we remove the carpets folder to clean up any residue files/folders
+        if os.path.exists(carpet.name):
+            shutil.rmtree(carpet.name)
 
         for (dirpath, dirnames, filenames) in os.walk('template'):
             destpath = dirpath.replace('template', carpet.name)

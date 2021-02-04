@@ -25,21 +25,11 @@ black
 
 
 TODO:
-- fix template files coming up in the server log
-
 - fix 2 not being able to be on a carpet at the same time
-
-- generate_carpets.py should delete folders first then generate them
 
 - purple carpets
 
 - different tp points for different dimensions OR NOT AT ALL
-
-- header comments in EVERY file CODE TOO
-
-- red/action needs all team colours
-
-- should be able to continue recieving players even after one has already been recieved
 
 - lime/orange carpets should block a 3rd participant from joining in on the trade of items
 - 2 on orange -> 1 on lime
@@ -49,10 +39,17 @@ TODO:
 
 
 IDEAS/IMPROVEMENTS:
+- if `pvp` team is implemented then red/action needs to be updated
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
+- red/green should say "waiting for player ON RED" and "waiting for player ON GREEN"
 
 
 COMPLETED:
+- header comments in EVERY file CODE TOO
+- generate_carpets.py should delete folders first then generate them
+- fix template files coming up in the server log
+- red/action needs all team colours
+- should be able to continue recieving players even after one has already been recieved
 - test leaving red/green carpets early
 - if someone is already on a red carpet prevent anyone else from entering one
 - put countdown stuff into its own folder
