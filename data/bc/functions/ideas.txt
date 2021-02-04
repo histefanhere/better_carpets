@@ -1,0 +1,79 @@
+COLOURS:
+- special
+white
+yellow
+purple
+
+- player tp
+red
+green
+
+- item tp
+orange
+lime
+
+- home carpets
+magenta
+light_blue
+pink
+gray
+light_gray
+cyan
+blue
+brown
+black
+
+
+TODO:
+- fix template files coming up in the server log
+
+- fix 2 not being able to be on a carpet at the same time
+
+- generate_carpets.py should delete folders first then generate them
+
+- purple carpets
+
+- different tp points for different dimensions OR NOT AT ALL
+
+- header comments in EVERY file CODE TOO
+
+- red/action needs all team colours
+
+- should be able to continue recieving players even after one has already been recieved
+
+- lime/orange carpets should block a 3rd participant from joining in on the trade of items
+- 2 on orange -> 1 on lime
+    - might need to split up the one line command in `main`
+
+- ask linc/mult how someone is currently added to central
+
+
+IDEAS/IMPROVEMENTS:
+- instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
+
+
+COMPLETED:
+- test leaving red/green carpets early
+- if someone is already on a red carpet prevent anyone else from entering one
+- put countdown stuff into its own folder
+- tags for colour/subtitle, colour/entering, colour/leaving
+- red/green carpets should have a cooldowns
+- opted for `registriies` instead of tags so we have less conditions and fuctions overall
+    - no need for each carpet's 'entry' function
+- script for generating home AND white, yellow and blue mcfunctions
+    - template needs comments and header
+
+
+PERMISSIONS:
+- bc_CENTRAL to use white carpet
+- bc_HOME_BLUE to use a blue carpet as home
+
+
+FEATURES:
+- when you warp with a red carpet you have a cooldown so you can't warp back or accidentally step on other carpets
+- doesn't constantly check for carpets around you, only under you and only once
+- VISUAL
+- SECURE
+- SIMPLICITY
+    - to configure in game
+        - simple commands, simple tags
