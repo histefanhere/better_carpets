@@ -18,7 +18,8 @@ class Carpet:
         out = out.replace('template_name', self.name)
         out = out.replace('template_colour', self.colour)
         out = out.replace('template_title', self.title)
-        out = out.replace('template_tag', self.tag)
+        out = out.replace('template_tag_special', self.tag)
+        out = out.replace('template_tag_colour', f"bc_from_{self.name}")
         return out
 
 def main():
@@ -46,6 +47,13 @@ def main():
                     with open(destfile, 'w+') as destfile:
                         destfile.write(carpet.template(text))
 
+# Carpet(name, colour, title, tag)
+# name   - name of the carpet TP
+# colour - colour of the carpet
+# title  - the text in the subtitle
+# tag    - a unique tag given to a player when `action` runs
+#          a command block in the world will listen to this
+
 carpets = [
     Carpet('white', 'white', 'spawn', 'bc_to_central'),
     Carpet('yellow', 'yellow', 'wilderness', 'bc_to_wilderness'),
@@ -59,7 +67,6 @@ carpets = [
     Carpet('light_gray', 'gray', 'home', 'bc_to_home'),
     Carpet('cyan', 'dark_aqua', 'home', 'bc_to_home'),
     Carpet('brown', '#784726', 'home', 'bc_to_home'),
-    # Carpet('black', 'black', 'home', 'bc_to_home'),
     Carpet('black', '#2e2e2e', 'home', 'bc_to_home'),
 ]
 
