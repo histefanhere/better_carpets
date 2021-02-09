@@ -3,4 +3,4 @@
 # @WHO: player who entered carpet
 # @WHERE: ???
 
-title @s subtitle [{"text":"Teleporting to: "},{"text":"home","bold":true,"color":"light_purple"}]
+title @s subtitle [{"text":"Teleporting to: "},{"text":"home","bold":true,"color":"#ed7999"}]

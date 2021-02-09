@@ -8,7 +8,7 @@ tag @s add bc_teleporting
 tag @s add bc_to_home
 tag @s add bc_from_pink
 
-title @s title {"text":".........","color":"light_purple"}
+title @s title {"text":".........","color":"#ed7999"}
 
 # No woosh.
 # tellraw @s {"text":"Woosh!","color":"light_purple"}

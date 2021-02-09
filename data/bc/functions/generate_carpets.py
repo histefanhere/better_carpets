@@ -71,7 +71,7 @@ carpets = [
     Carpet('purple_border', 'dark_purple', 'borderlands', 'bc_to_border'),
 
     # Home carpets
-    Carpet('pink', 'light_purple', 'home', 'bc_to_home'),
+    Carpet('pink', '#ed7999', 'home', 'bc_to_home'),
     Carpet('blue', 'blue', 'home', 'bc_to_home'),
     Carpet('magenta', 'light_purple', 'home', 'bc_to_home'),
     Carpet('light_blue', 'aqua', 'home', 'bc_to_home'),
