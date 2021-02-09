@@ -4,6 +4,10 @@
 # These carpets, if a condition is met (which is handled in registries), instantly begin teleportation of the player.
 # Such carpets include the white spawn carpet, yellow wilderness carpet, and ALL home carpets.
 
+# While developing I noticed that literally all these carpets are identicaly in funcitonality
+# and the only difference between them was they have different permissions of who can use them.
+# These perimssions are not covered in this program, they're mostly in `registries/entering`.
+
 import os, shutil
 
 class Carpet:
@@ -33,6 +37,7 @@ def main():
         for (dirpath, dirnames, filenames) in os.walk('template'):
             destpath = dirpath.replace('template', carpet.name)
 
+            # Make any folders and subfolders if they don't exist yet
             if not os.path.exists(destpath):
                 os.mkdir(destpath)
 
@@ -41,6 +46,7 @@ def main():
                 dirfile = os.path.join(dirpath, filename)
                 destfile = os.path.join(destpath, filename)
 
+                # Read the contents of the template file and write it to the destination file after filling in the template variables
                 with open(dirfile, 'r') as file:
                     text = file.read()
 

@@ -61,20 +61,18 @@ black
 
 
 TODO:
-- readme
-
-- comment code files
-
-- instructions
-    - write down all in game commands
-    - SETUP.md
-
+none!
 
 IDEAS/IMPROVEMENTS:
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
 
 
 COMPLETED:
+- readme
+- instructions
+    - write down all in game commands
+    - SETUP.md
+- comment code files
 - lime/orange carpets should block a 3rd participant from joining in on the trade of items
 - 2 on orange -> 1 on lime
     - might need to split up the one line command in `main`

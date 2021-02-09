@@ -1,2 +1,33 @@
 # better_carpets
 A new and improved carpet teleportation system for Geek NZ
+
+Geek NZ is a New Zealand-based Minecraft SMP server. From the [minecraft-mp page](https://minecraft-mp.com/server-s13774):
+
+> Our small New Zealand based server has always been popular with friends and family. We run a vanilla server on PaperMC with a few small additions to make life a little easier. If you are a nice person you are welcome to join us.
+
+## "a few small additions"?
+
+To try and keep the server as vanilla as possible, we have a unique carpet teleportation system that aims to replace the `/home`, `/tpa`, `/warp` and other commands from non-vanilla servers; not only does this keep the experience on Geek NZ purer, but it's much funner :). This repository is a datapack for an improved version of this tp system
+
+## Advantages
+
+#### SAFE
+- The countdown means no more accidental tp's!
+- When you tp from red -> green there is a cooldown that prevents you from stepping on any other carpet
+#### STABLE 
+- The carpets have been extensivley tested and built for maximum stability
+- In theory there should be _less_ lag (on average) than the original carpet system
+#### SECURE
+- When on a red carpet you are told exactly who you're teleporting too
+- When on a orange carpet you are told exactly who you're sending items too
+- The commands prevent someone from stepping on lime when someone's already on it, meaning no one can intercept the items
+#### VISUAL
+- For both new players and experienced, being shown live where the carpets lead and what they do is priceless
+- And I mean, come on, who doesn't like a nice visual progress bar animation?
+
+## Disadvantages
+- TODO: find disadvantages
+
+## Setup
+
+For the nitty-gritty of setting up and configuring the carpets check out [SETUP.md](SETUP.md).
