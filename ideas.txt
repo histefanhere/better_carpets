@@ -61,11 +61,13 @@ black
 
 
 TODO:
-- lime/orange carpets should block a 3rd participant from joining in on the trade of items
-- 2 on orange -> 1 on lime
-    - might need to split up the one line command in `main`
+- readme
 
-- ask linc/mult how someone is currently added to central
+- comment code files
+
+- instructions
+    - write down all in game commands
+    - SETUP.md
 
 
 IDEAS/IMPROVEMENTS:
@@ -73,6 +75,10 @@ IDEAS/IMPROVEMENTS:
 
 
 COMPLETED:
+- lime/orange carpets should block a 3rd participant from joining in on the trade of items
+- 2 on orange -> 1 on lime
+    - might need to split up the one line command in `main`
+orange doesn't show title when there's an active trade happening
 - BORDERLANDS PLAYERS SHOULDN'T BE ABLE TO GET TO wilderness
 - + what else does the `admin` tag override?
 - purple carpets
