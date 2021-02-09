@@ -1,7 +1,10 @@
 
-execute as @s[tag=on_white] run function bc:white/action
-execute as @s[tag=on_yellow] run function bc:yellow/action
-execute as @s[tag=on_purple] run function bc:purple/action
+execute as @s[tag=on_yellow_wilderness] run function bc:yellow_wilderness/action
+execute as @s[tag=on_white_spawn] run function bc:white_spawn/action
+execute as @s[tag=on_white_nether_hub] run function bc:white_nether_hub/action
+execute as @s[tag=on_white_end_portal] run function bc:white_end_portal/action
+execute as @s[tag=on_white_border] run function bc:white_border/action
+execute as @s[tag=on_purple_border] run function bc:purple_border/action
 
 execute as @s[tag=on_red] run function bc:red/action
 
@@ -18,3 +21,5 @@ execute as @s[tag=on_cyan] run function bc:cyan/action
 execute as @s[tag=on_blue] run function bc:blue/action
 execute as @s[tag=on_brown] run function bc:brown/action
 execute as @s[tag=on_black] run function bc:black/action
+
+execute as @s[tag=on_admin_brown] run function bc:admin_brown/action

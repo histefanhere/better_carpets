@@ -1,4 +1,4 @@
-# @WHAT: yellow/subtitle
+# @WHAT: yellow_wilderness/subtitle
 # @WHY: player entered carpet, countdown is showing and it needs a subtitle
 # @WHO: player who entered carpet
 # @WHERE: ???

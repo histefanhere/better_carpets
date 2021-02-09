@@ -1,0 +1,6 @@
+# @WHAT: white_border/subtitle
+# @WHY: player entered carpet, countdown is showing and it needs a subtitle
+# @WHO: player who entered carpet
+# @WHERE: ???
+
+title @s subtitle [{"text":"Teleporting to: "},{"text":"borderlands","bold":true,"color":"white"}]

@@ -1,7 +1,10 @@
 
-execute as @s[tag=on_white] unless block ~ ~ ~ white_carpet run function bc:white/leaving
-execute as @s[tag=on_yellow] unless block ~ ~ ~ yellow_carpet run function bc:yellow/leaving
-execute as @s[tag=on_purple] unless block ~ ~ ~ purple_carpet run function bc:purple/leaving
+execute as @s[tag=on_yellow_wilderness] unless block ~ ~ ~ yellow_carpet run function bc:yellow_wilderness/leaving
+execute as @s[tag=on_white_spawn] unless block ~ ~ ~ white_carpet run function bc:white_spawn/leaving
+execute as @s[tag=on_white_nether_hub] unless block ~ ~ ~ white_carpet run function bc:white_nether_hub/leaving
+execute as @s[tag=on_white_end_portal] unless block ~ ~ ~ white_carpet run function bc:white_end_portal/leaving
+execute as @s[tag=on_white_border] unless block ~ ~ ~ white_carpet run function bc:white_border/leaving
+execute as @s[tag=on_purple_border] unless block ~ ~ ~ purple_carpet run function bc:purple_border/leaving
 
 execute as @s[tag=on_red] unless block ~ ~ ~ red_carpet run function bc:red/leaving
 execute as @s[tag=on_green] unless block ~ ~ ~ green_carpet run function bc:green/leaving
@@ -18,3 +21,5 @@ execute as @s[tag=on_cyan] unless block ~ ~ ~ cyan_carpet run function bc:cyan/l
 execute as @s[tag=on_blue] unless block ~ ~ ~ blue_carpet run function bc:blue/leaving
 execute as @s[tag=on_brown] unless block ~ ~ ~ brown_carpet run function bc:brown/leaving
 execute as @s[tag=on_black] unless block ~ ~ ~ black_carpet run function bc:black/leaving
+
+execute as @s[tag=on_admin_brown] unless block ~ ~ ~ brown_carpet run function bc:admin_brown/leaving

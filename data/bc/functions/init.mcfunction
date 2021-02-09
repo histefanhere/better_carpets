@@ -4,4 +4,4 @@
 scoreboard objectives add carpet_countdown dummy
 scoreboard objectives add carpet_cooldown dummy
 
-say init
+# say init

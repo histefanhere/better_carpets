@@ -54,11 +54,23 @@ def main():
 # tag    - a unique tag given to a player when `action` runs
 #          a command block in the world will listen to this
 
-carpets = [
-    Carpet('white', 'white', 'spawn', 'bc_to_central'),
-    Carpet('yellow', 'yellow', 'wilderness', 'bc_to_wilderness'),
-    Carpet('purple', 'dark_purple', 'home', 'bc_to_home'),
+# NOTE: Also `bc_from_{name}` is given
 
+carpets = [
+    # 1. yellow_wilderness
+    Carpet('yellow_wilderness', 'yellow', 'wilderness', 'bc_to_wilderness'),
+    # 2. white_spawn
+    Carpet('white_spawn', 'white', 'spawn', 'bc_to_central'),
+    # 3. white_nether_hub
+    Carpet('white_nether_hub', 'white', 'nether hub', 'bc_to_nether_hub'),
+    # 4. white_end_portal
+    Carpet('white_end_portal', 'white', 'end portal', 'bc_to_end_portal'),
+    # 5. white_border
+    Carpet('white_border', 'white', 'borderlands', 'bc_to_border'),
+    # 6. purple_border
+    Carpet('purple_border', 'dark_purple', 'borderlands', 'bc_to_border'),
+
+    # Home carpets
     Carpet('pink', 'light_purple', 'home', 'bc_to_home'),
     Carpet('blue', 'blue', 'home', 'bc_to_home'),
     Carpet('magenta', 'light_purple', 'home', 'bc_to_home'),
@@ -68,6 +80,9 @@ carpets = [
     Carpet('cyan', 'dark_aqua', 'home', 'bc_to_home'),
     Carpet('brown', '#784726', 'home', 'bc_to_home'),
     Carpet('black', '#2e2e2e', 'home', 'bc_to_home'),
+
+    # Admin brown carpet
+    Carpet('admin_brown', '#784726', 'Admin Quarters', 'bc_to_admin')
 ]
 
 if __name__ == "__main__":

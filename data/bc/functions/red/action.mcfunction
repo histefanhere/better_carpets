@@ -11,6 +11,7 @@ tp @a[tag=bc_player_dest,limit=1]
 # woosh!
 tellraw @s {"text":"Woosh!","color":"light_purple"}
 
+execute if entity @p[tag=bc_player_dest,team=white] run title @s title {"text":".........","color":"white"}
 execute if entity @p[tag=bc_player_dest,team=green] run title @s title {"text":".........","color":"green"}
 execute if entity @p[tag=bc_player_dest,team=dark_red] run title @s title {"text":".........","color":"dark_red"}
 execute if entity @p[tag=bc_player_dest,team=dark_green] run title @s title {"text":".........","color":"dark_green"}
@@ -26,3 +27,6 @@ execute if entity @p[tag=bc_player_dest,team=gray] run title @s title {"text":".
 execute if entity @p[tag=bc_player_dest,team=blue] run title @s title {"text":".........","color":"blue"}
 execute if entity @p[tag=bc_player_dest,team=dark_aqua] run title @s title {"text":".........","color":"dark_aqua"}
 execute if entity @p[tag=bc_player_dest,team=dark_gray] run title @s title {"text":".........","color":"dark_gray"}
+
+execute if entity @p[tag=bc_player_dest,team=pvp] run title @s title {"text":".........","color":"dark_red"}
+execute if entity @p[tag=bc_player_dest,team=wilderness] run title @s title {"text":".........","color":"white"}

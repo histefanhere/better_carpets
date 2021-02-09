@@ -1,3 +1,39 @@
++------------------+-----------+----------+------------+
+|      Colour      | Overworld |  Nether  |    End     |
++------------------+-----------+----------+------------+
+| WILD - Yellow    | wild      | wild     | -          |
+| CENTRAL - Yellow | wild      | wild     | -          |
+| PVP - Yellow     | wild      | wild     | -          |
+
+| WILD - White     | -         | -        | end portal |
+| CENTRAL - White  | spawn     | netspawn | end portal |
+| PVP - White      | bord      | bord     | end portal |
+
+| WILD - Purple    | -         | -        | -          |
+| CENTRAL - Purple | bord      | -        | -          |
+| PVP - Purple     | bord      | -        | -          |
++------------------+-----------+----------+------------+
+
+1. yellow_wilderness
+yellow, !end => wilderness
+
+2. white_spawn
+white, !wild, !pvp, ow, => spawn
+
+3. white_nether_hub
+white, !wild, !pvp, net, => netspawn
+
+4. white_end_portal
+white, end => end portal
+
+5. white_border
+white, pvp, !end => border
+
+6. purple_border
+purple, !wild, ow => border
+
+BROWN ADMIN CARPET
+
 COLOURS:
 - special
 white
@@ -25,10 +61,6 @@ black
 
 
 TODO:
-- purple carpets
-
-- different tp points for different dimensions OR NOT AT ALL
-
 - lime/orange carpets should block a 3rd participant from joining in on the trade of items
 - 2 on orange -> 1 on lime
     - might need to split up the one line command in `main`
@@ -37,12 +69,19 @@ TODO:
 
 
 IDEAS/IMPROVEMENTS:
-- if `pvp` team is implemented then red/action needs to be updated
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
 
 
-
 COMPLETED:
+- purple carpets
+- different tp points for different dimensions OR NOT AT ALL
+- integrate with existing team system
+- maybe totally different entries in `generate_carpets.py` for different carpet's destinations?
+    - (this would let us make each carpet's destination dimenion also show a different title)
+    - E.G. in overworld, white carpet would show "Teleporting to: *spawn*" but in end "Teleporting to: *end portal*"
+    - SUPER simple to do, just add more entries to python script.
+    - disadvantage is it wouldn't be configurable from within the mc world
+- if `pvp` team is implemented then red/action needs to be updated
 - fix 2 not being able to be on a carpet at the same time
 - red/green should say "waiting for player ON RED" and "waiting for player ON GREEN"
 - header comments in EVERY file CODE TOO
