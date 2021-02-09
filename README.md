@@ -12,14 +12,14 @@ To try and keep the server as vanilla as possible, we have a unique carpet telep
 ## Advantages
 
 ### _Safe_
-- The countdown means no more accidental tp's!
+- The countdown means _no more accidental teleports!_
 - When you tp from red -> green there is a cooldown that prevents you from stepping on any other carpet
 ### _Stable_ 
 - The carpets have been extensivley tested and built for maximum stability
 - In theory there should be _less_ lag (on average) than the original carpet system
 ### _Secure_
-- When on a red carpet you are told exactly who you're teleporting too
-- When on a orange carpet you are told exactly who you're sending items too
+- When on a red carpet you are told exactly who you're teleporting to
+- When on a orange carpet you are told exactly who you're sending items to
 - The commands prevent someone from stepping on lime when someone's already on it, meaning no one can intercept the items
 ### _Visual_
 - For both new players and experienced, being shown live where the carpets lead and what they do is priceless
