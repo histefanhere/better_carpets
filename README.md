@@ -11,22 +11,21 @@ To try and keep the server as vanilla as possible, we have a unique carpet telep
 
 ## Advantages
 
-#### SAFE
+### _Safe_
 - The countdown means no more accidental tp's!
 - When you tp from red -> green there is a cooldown that prevents you from stepping on any other carpet
-#### STABLE 
+### _Stable_ 
 - The carpets have been extensivley tested and built for maximum stability
 - In theory there should be _less_ lag (on average) than the original carpet system
-#### SECURE
+### _Secure_
 - When on a red carpet you are told exactly who you're teleporting too
 - When on a orange carpet you are told exactly who you're sending items too
 - The commands prevent someone from stepping on lime when someone's already on it, meaning no one can intercept the items
-#### VISUAL
+### _Visual_
 - For both new players and experienced, being shown live where the carpets lead and what they do is priceless
 - And I mean, come on, who doesn't like a nice visual progress bar animation?
 
 ## Disadvantages
-- TODO: find disadvantages
 
 ## Setup
 
