@@ -63,6 +63,7 @@ black
 TODO:
 none!
 
+
 IDEAS/IMPROVEMENTS:
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
 
@@ -104,18 +105,3 @@ orange doesn't show title when there's an active trade happening
     - no need for each carpet's 'entry' function
 - script for generating home AND white, yellow and blue mcfunctions
     - template needs comments and header
-
-
-PERMISSIONS:
-- bc_CENTRAL to use white carpet
-- bc_HOME_BLUE to use a blue carpet as home
-
-
-FEATURES:
-- when you warp with a red carpet you have a cooldown so you can't warp back or accidentally step on other carpets
-- doesn't constantly check for carpets around you, only under you and only once
-- VISUAL
-- SECURE
-- SIMPLICITY
-    - to configure in game
-        - simple commands, simple tags

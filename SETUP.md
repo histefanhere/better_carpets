@@ -42,7 +42,7 @@ For a player to be able to have a home carpet they first need to have the corres
 They also need a corresponding command block to teleport them to their home, the command for which is:
 
 ```mcfunction
-execute as @a[tag=bc_to_home,tag=bc_from_blue] as @s[name=NAME] in overworld run tp @s COORDS
+execute as @a[tag=bc_to_home] as @s[name=NAME] in overworld run tp @s COORDS
 ```
 
 where **NAME** is the name of the player and **COORDS** is the coordinates of their home. Note that this command is colour-independant, meaning if the player wishes to change their carpet colour only the permission tag needs to be changed.
