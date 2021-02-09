@@ -1,5 +1,5 @@
 
-execute as @s[tag=!on_yellow_wilderness] as @s[nbt=!{Dimension:"minecraft:the_end"}] if predicate bc:on_yellow run function bc:yellow_wilderness/entering
+execute as @s[tag=!on_yellow_wilderness] as @s[team=!pvp,nbt=!{Dimension:"minecraft:the_end"}] if predicate bc:on_yellow run function bc:yellow_wilderness/entering
 execute as @s[tag=!on_white_spawn] as @s[team=!pvp,team=!wilderness,nbt={Dimension:"minecraft:overworld"}] if predicate bc:on_white run function bc:white_spawn/entering
 execute as @s[tag=!on_white_nether_hub] as @s[team=!pvp,team=!wilderness,nbt={Dimension:"minecraft:the_nether"}] if predicate bc:on_white run function bc:white_nether_hub/entering
 execute as @s[tag=!on_white_end_portal] as @s[nbt={Dimension:"minecraft:the_end"}] if predicate bc:on_white run function bc:white_end_portal/entering

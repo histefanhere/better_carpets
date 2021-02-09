@@ -3,7 +3,7 @@
 +------------------+-----------+----------+------------+
 | WILD - Yellow    | wild      | wild     | -          |
 | CENTRAL - Yellow | wild      | wild     | -          |
-| PVP - Yellow     | wild      | wild     | -          |
+| PVP - Yellow     | -         | -        | -          |
 
 | WILD - White     | -         | -        | end portal |
 | CENTRAL - White  | spawn     | netspawn | end portal |
@@ -15,7 +15,7 @@
 +------------------+-----------+----------+------------+
 
 1. yellow_wilderness
-yellow, !end => wilderness
+yellow, !end, !pvp => wilderness
 
 2. white_spawn
 white, !wild, !pvp, ow, => spawn
@@ -73,6 +73,8 @@ IDEAS/IMPROVEMENTS:
 
 
 COMPLETED:
+- BORDERLANDS PLAYERS SHOULDN'T BE ABLE TO GET TO wilderness
+- + what else does the `admin` tag override?
 - purple carpets
 - different tp points for different dimensions OR NOT AT ALL
 - integrate with existing team system
