@@ -1,6 +1,7 @@
 # Because this happens BEFORE the countdown tick, any command blocks in the world will have the chance to detect this tag change and teleport them
 # Before the tag is revoked
-execute as @a[tag=bc_teleporting] run function bc:registries/clear_tag
+execute as @a[tag=bc_teleporting,tag=!bc_one_tick_delay] run function bc:registries/clear_tag
+execute as @a[tag=bc_one_tick_delay] run tag @s remove bc_one_tick_delay
 
 execute as @a[tag=bc_countdown] run function bc:countdown/tick
 
