@@ -18,4 +18,7 @@ execute as @a[scores={carpet_cooldown=0}] run scoreboard players reset @s carpet
 # First we leave and THEN we join because then a player can walk onto one special carpet from another
 # And they'll leave their previous carpet before entering the current one
 execute as @a[tag=bc_on_carpet] at @s run function bc:registries/leaving
-execute as @a[tag=!bc_on_carpet,tag=!bc_cooldown] at @s if block ~ ~ ~ #bc:special_carpets run function bc:registries/entering
+execute as @a[tag=!bc_on_carpet,tag=!bc_cooldown,tag=!bc_sneak_protection] at @s if block ~ ~ ~ #bc:special_carpets run function bc:registries/entering
+
+# Get rid of a player's sneak protection
+execute as @a[tag=bc_sneak_protection] at @s unless block ~ ~ ~ #bc:special_carpets run tag @s remove bc_sneak_protection
