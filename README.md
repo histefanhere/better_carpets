@@ -14,6 +14,7 @@ To try and keep the server as vanilla as possible, we have a unique carpet telep
 ### _Safe_
 - The countdown means _no more accidental teleports!_
 - When you tp from red -> green there is a cooldown that prevents you from stepping on any other carpet
+- Don't want to get teleported when stepping on a carpet? Just shift sneak onto it, and it will act just like any other boring mesh of wool
 ### _Stable_ 
 - The carpets have been extensively tested and built for maximum stability
 - In theory there should be _less_ lag (on average) than the original carpet system
