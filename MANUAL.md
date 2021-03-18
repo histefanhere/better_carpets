@@ -1,4 +1,4 @@
-# Setting up
+# Setup
 
 So you want to use these better carpets? Awesome! It was made with the goal of being as simple and straight forward to setup.
 
@@ -62,3 +62,33 @@ execute as @a[tag=bc_to_home,tag=bc_from_black] as ...
 ```
 
 Specifying the carpet colour in the command for a single-homed player is unnecessary.
+
+# Usage
+
+Here are some neat tricks and tips that better_carpets provides, some for the average joe player and some specifically for admins.
+
+## Cheaty Admin Teleportation
+
+Because come on, what admin _doesn't_ like teleporting around? better_carpets makes this bad habbit easier than ever by providing you with a set of functions that an admin can run from chat and be teleported to some key locations around the map, no carpet required.
+
+The commands follow the format of:
+
+```mcfunction
+function to:DESTINATION
+```
+
+where **DESTINATION** can be any one of the following:
+
+- `admin`
+- `border`
+- `central`
+- `end_portal`
+- `home`
+- `nether_hub`
+- `wilderness`
+
+So as an admin, getting to the end has never been easier, it's just one command away:
+
+```mcfunction
+function to:end_portal
+```

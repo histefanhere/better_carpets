@@ -28,6 +28,6 @@ To try and keep the server as vanilla as possible, we have a unique carpet telep
 
 ## Disadvantages
 
-## Setup
+## Setup & Usage
 
-For the nitty-gritty of setting up and configuring the carpets check out [SETUP.md](SETUP.md).
+For the nitty-gritty of setting up, configuring and using the carpets check out [MANUAL.md](MANUAL.md).
