@@ -19,7 +19,9 @@ template = '''[
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "block": "minecraft:COLOUR_carpet"
+          "blocks": [
+            "minecraft:COLOUR_carpet"
+          ]
         }
       }
     }
@@ -33,7 +35,9 @@ template = '''[
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "block": "minecraft:COLOUR_carpet"
+          "blocks": [
+            "minecraft:COLOUR_carpet"
+          ]
         }
       }
     }
@@ -47,7 +51,9 @@ template = '''[
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "block": "minecraft:COLOUR_carpet"
+          "blocks": [
+            "minecraft:COLOUR_carpet"
+          ]
         }
       }
     }
@@ -61,20 +67,23 @@ template = '''[
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "block": "minecraft:COLOUR_carpet"
+          "blocks": [
+            "minecraft:COLOUR_carpet"
+          ]
         }
       }
     }
   },
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
     "predicate": {
-      "type": "minecraft:player",
-      "location": {
-        "block": {
-          "block": "minecraft:COLOUR_carpet"
-        }
+      "block": {
+        "blocks": [
+          "minecraft:COLOUR_carpet"
+        ]
       }
     }
   }

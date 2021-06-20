@@ -8,7 +8,9 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "block": "minecraft:light_blue_carpet"
+          "blocks": [
+            "minecraft:light_blue_carpet"
+          ]
         }
       }
     }
@@ -22,7 +24,9 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "block": "minecraft:light_blue_carpet"
+          "blocks": [
+            "minecraft:light_blue_carpet"
+          ]
         }
       }
     }
@@ -36,7 +40,9 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "block": "minecraft:light_blue_carpet"
+          "blocks": [
+            "minecraft:light_blue_carpet"
+          ]
         }
       }
     }
@@ -50,20 +56,23 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "block": "minecraft:light_blue_carpet"
+          "blocks": [
+            "minecraft:light_blue_carpet"
+          ]
         }
       }
     }
   },
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
     "predicate": {
-      "type": "minecraft:player",
-      "location": {
-        "block": {
-          "block": "minecraft:light_blue_carpet"
-        }
+      "block": {
+        "blocks": [
+          "minecraft:light_blue_carpet"
+        ]
       }
     }
   }
