@@ -75,11 +75,13 @@ carpets = [
     Carpet('white_border', 'white', 'borderlands', 'bc_to_border'),
     # 6. purple_border
     Carpet('purple_border', 'dark_purple', 'borderlands', 'bc_to_border'),
+    # 7. magenta_119
+    Carpet('magenta_119', 'light_purple', '1.19 spawn', 'bc_to_119'),
 
     # Home carpets
     Carpet('pink', '#ed7999', 'home', 'bc_to_home'),
     Carpet('blue', 'blue', 'home', 'bc_to_home'),
-    Carpet('magenta', 'light_purple', 'home', 'bc_to_home'),
+    # Carpet('magenta', 'light_purple', 'home', 'bc_to_home'),
     Carpet('light_blue', 'aqua', 'home', 'bc_to_home'),
     Carpet('gray', 'dark_gray', 'home', 'bc_to_home'),
     Carpet('light_gray', 'gray', 'home', 'bc_to_home'),
@@ -88,7 +90,7 @@ carpets = [
     Carpet('black', '#2e2e2e', 'home', 'bc_to_home'),
 
     # Admin brown carpet
-    Carpet('admin_brown', '#784726', 'Admin Quarters', 'bc_to_admin')
+    Carpet('admin_brown', '#784726', 'admin quarters', 'bc_to_admin')
 ]
 
 if __name__ == "__main__":
