@@ -34,41 +34,45 @@ purple, !wild, ow => border
 
 BROWN ADMIN CARPET
 
-COLOURS:
-- special
-white
-yellow
-purple
+## Carpet Colours
 
-- player tp
-red
-green
+1. server carpets:
+   - white
+   - yellow
+   - purple
+   - brown
 
-- item tp
-orange
-lime
+2. home carpets:
+   - magenta
+   - light_blue
+   - pink
+   - gray
+   - light_gray
+   - cyan
+   - blue
+   - brown
+   - black
 
-- home carpets
-magenta
-light_blue
-pink
-gray
-light_gray
-cyan
-blue
-brown
-black
+3. special carpets:
+   - player tp: red/green
+   - item tp: orange/lime
 
+## Tasks
 
 TODO:
-none!
+- DOCUMENTATION
+- switch from magenta for 119 to cyan
 
 
 IDEAS/IMPROVEMENTS:
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
+- all home carpets just show "home" when tping but there could be different types that show things like "farm", "project", "base" instead
 
 
 COMPLETED:
+- categorize functions into folders - "special", "home", "transport" etc
+    - maybe even put all carpets into "carpets" folder, then from there categorize further
+    - would require A LOT of rewriting other things
 - readme
 - instructions
     - write down all in game commands

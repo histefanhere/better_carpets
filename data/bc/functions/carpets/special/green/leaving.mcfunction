@@ -11,7 +11,7 @@ tag @s remove on_green
 # (and hence red sees the right subtitle)
 execute if entity @s[tag=bc_player_dest] run tag @s add bc_was_dest
 execute if entity @s[tag=bc_was_dest] run tag @s remove bc_player_dest
-execute if entity @s[tag=bc_was_dest] as @a[tag=on_red] run function bc:red/stop_warp
+execute if entity @s[tag=bc_was_dest] as @a[tag=on_red] run function bc:carpets/special/red/stop_warp
 execute if entity @s[tag=bc_was_dest] run tag @s remove bc_was_dest
 
 # Clear any titles the player may have

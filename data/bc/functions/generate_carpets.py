@@ -11,8 +11,9 @@
 import os, shutil
 
 class Carpet:
-    def __init__(self, name, colour, title, tag):
+    def __init__(self, name, category, colour, title, tag):
         self.name = name
+        self.category = category
         self.colour = colour
         self.title = title
         self.tag = tag
@@ -30,21 +31,27 @@ def main():
     for carpet in carpets:
         print(carpet.name)
 
+        folder = os.path.join('carpets', carpet.category, carpet.name)
+
         # Firstly we remove the carpets folder to clean up any residue files/folders
-        if os.path.exists(carpet.name):
-            shutil.rmtree(carpet.name)
+        if os.path.exists(folder):
+            shutil.rmtree(folder)
+        os.mkdir(folder)
 
         for (dirpath, dirnames, filenames) in os.walk('template'):
-            destpath = dirpath.replace('template', carpet.name)
+            # destpath = os.path.join(dirpath, '..', 'carpets', carpet.category, carpet.name)
+            # destpath = os.path.join('carpets', carpet.category, carpet.name)
 
             # Make any folders and subfolders if they don't exist yet
-            if not os.path.exists(destpath):
-                os.mkdir(destpath)
+            # if not os.path.exists(folder):
+                # os.mkdir(folder)
 
             for filename in filenames:
                 # For each filename we generate a new one
                 dirfile = os.path.join(dirpath, filename)
-                destfile = os.path.join(destpath, filename)
+                destfile = os.path.join(folder, filename)
+
+                print(dirfile, destfile)
 
                 # Read the contents of the template file and write it to the destination file after filling in the template variables
                 with open(dirfile, 'r') as file:
@@ -53,44 +60,37 @@ def main():
                     with open(destfile, 'w+') as destfile:
                         destfile.write(carpet.template(text))
 
-# Carpet(name, colour, title, tag)
-# name   - name of the carpet TP
-# colour - colour of the carpet
-# title  - the text in the subtitle
-# tag    - a unique tag given to a player when `action` runs
-#          a command block in the world will listen to this
+# Carpet(name, category, colour, title, tag)
+# name      - name of the carpet TP
+# category  - category to put the carpet in
+# colour    - colour of the carpet
+# title     - the text in the subtitle
+# tag       - a unique tag given to a player when `action` runs
+#             a command block in the world will listen to this
 
 # NOTE: Also `bc_from_{name}` is given
 
 carpets = [
-    # 1. yellow_wilderness
-    Carpet('yellow_wilderness', 'yellow', 'wilderness', 'bc_to_wilderness'),
-    # 2. white_spawn
-    Carpet('white_spawn', 'white', 'spawn', 'bc_to_central'),
-    # 3. white_nether_hub
-    Carpet('white_nether_hub', 'white', 'nether hub', 'bc_to_nether_hub'),
-    # 4. white_end_portal
-    Carpet('white_end_portal', 'white', 'end portal', 'bc_to_end_portal'),
-    # 5. white_border
-    Carpet('white_border', 'white', 'borderlands', 'bc_to_border'),
-    # 6. purple_border
-    Carpet('purple_border', 'dark_purple', 'borderlands', 'bc_to_border'),
-    # 7. magenta_119
-    Carpet('magenta_119', 'light_purple', '1.19 spawn', 'bc_to_119'),
+    # Server carpets
+    Carpet('yellow_wilderness',     'server',   'yellow',           'wilderness',           'bc_to_wilderness'),
+    Carpet('white_spawn',           'server',   'white',            'spawn',                'bc_to_central'),
+    Carpet('white_nether_hub',      'server',   'white',            'nether hub',           'bc_to_nether_hub'),
+    Carpet('white_end_portal',      'server',   'white',            'end portal',           'bc_to_end_portal'),
+    Carpet('white_border',          'server',   'white',            'borderlands',          'bc_to_border'),
+    Carpet('purple_border',         'server',   'dark_purple',      'borderlands',          'bc_to_border'),
+    Carpet('admin_brown',           'server',   '#784726',          'admin quarters',       'bc_to_admin'),
+    Carpet('magenta_119',           'server',   'light_purple',     '1.19 spawn',           'bc_to_119'),
 
     # Home carpets
-    Carpet('pink', '#ed7999', 'home', 'bc_to_home'),
-    Carpet('blue', 'blue', 'home', 'bc_to_home'),
+    Carpet('pink',                  'home',     '#ed7999',          'home',                 'bc_to_home'),
+    Carpet('blue',                  'home',     'blue',             'home',                 'bc_to_home'),
     # Carpet('magenta', 'light_purple', 'home', 'bc_to_home'),
-    Carpet('light_blue', 'aqua', 'home', 'bc_to_home'),
-    Carpet('gray', 'dark_gray', 'home', 'bc_to_home'),
-    Carpet('light_gray', 'gray', 'home', 'bc_to_home'),
-    Carpet('cyan', 'dark_aqua', 'home', 'bc_to_home'),
-    Carpet('brown', '#784726', 'home', 'bc_to_home'),
-    Carpet('black', '#2e2e2e', 'home', 'bc_to_home'),
-
-    # Admin brown carpet
-    Carpet('admin_brown', '#784726', 'admin quarters', 'bc_to_admin')
+    Carpet('light_blue',            'home',     'aqua',             'home',                 'bc_to_home'),
+    Carpet('gray',                  'home',     'dark_gray',        'home',                 'bc_to_home'),
+    Carpet('light_gray',            'home',     'gray',             'home',                 'bc_to_home'),
+    Carpet('cyan',                  'home',     'dark_aqua',        'home',                 'bc_to_home'),
+    Carpet('brown',                 'home',     '#784726',          'home',                 'bc_to_home'),
+    Carpet('black',                 'home',     '#2e2e2e',          'home',                 'bc_to_home')
 ]
 
 if __name__ == "__main__":

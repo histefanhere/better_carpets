@@ -6,4 +6,4 @@
 # This is very similar to what happens in orange/leaving, but in addition to stopping the countdown
 # We need to update their title.
 
-function bc:orange/update_title
+function bc:carpets/special/orange/update_title

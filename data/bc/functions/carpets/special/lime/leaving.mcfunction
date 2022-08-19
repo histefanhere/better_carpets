@@ -11,7 +11,7 @@ tag @s remove on_lime
 # (and hence orange sees the right subtitle)
 execute if entity @s[tag=bc_item_dest] run tag @s add bc_was_item_dest
 execute if entity @s[tag=bc_was_item_dest] run tag @s remove bc_item_dest
-execute if entity @s[tag=bc_was_item_dest] as @a[tag=on_orange] run function bc:orange/stop_warp
+execute if entity @s[tag=bc_was_item_dest] as @a[tag=on_orange] run function bc:carpets/special/orange/stop_warp
 execute if entity @s[tag=bc_was_item_dest] run tag @s remove bc_was_item_dest
 
 # Clear any titles the player may have

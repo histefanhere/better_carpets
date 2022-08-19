@@ -8,4 +8,4 @@
 
 function bc:countdown/stop
 
-function bc:red/update_title
+function bc:carpets/special/red/update_title

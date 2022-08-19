@@ -7,7 +7,7 @@ tag @s remove bc_on_carpet
 tag @s remove on_red
 
 # If we leave, we want to update the display of possibly any players on green we were teleporting too
-execute as @a[tag=bc_player_dest] at @s run function bc:green/update_title
+execute as @a[tag=bc_player_dest] at @s run function bc:carpets/special/green/update_title
 
 # NOTE: I'll probably do something like this here:
 # execute if score @s carpet_countdown matches 0.. run function bc:countdown/stop
