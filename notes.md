@@ -1,3 +1,30 @@
+# Notes
+
+## Carpet colours
+
+1. server carpets:
+   - white
+   - yellow
+   - purple
+   - brown
+   - magenta
+
+2. home carpets:
+   - light_blue
+   - pink
+   - gray
+   - light_gray
+   - cyan
+   - blue
+   - brown
+   - black
+
+3. special carpets:
+   - player tp: red/green
+   - item tp: orange/lime
+
+## Permissions logic
+
 +------------------+-----------+----------+------------+
 |      Colour      | Overworld |  Nether  |    End     |
 +------------------+-----------+----------+------------+
@@ -14,62 +41,27 @@
 | PVP - Purple     | bord      | -        | -          |
 +------------------+-----------+----------+------------+
 
-1. yellow_wilderness
-yellow, !end, !pvp => wilderness
-
-2. white_spawn
-white, !wild, !pvp, ow, => spawn
-
-3. white_nether_hub
-white, !wild, !pvp, net, => netspawn
-
-4. white_end_portal
-white, end => end portal
-
-5. white_border
-white, pvp, !end => border
-
-6. purple_border
-purple, !wild, ow => border
-
-BROWN ADMIN CARPET
-
-## Carpet Colours
-
-1. server carpets:
-   - white
-   - yellow
-   - purple
-   - brown
-
-2. home carpets:
-   - magenta
-   - light_blue
-   - pink
-   - gray
-   - light_gray
-   - cyan
-   - blue
-   - brown
-   - black
-
-3. special carpets:
-   - player tp: red/green
-   - item tp: orange/lime
+- yellow_wilderness: yellow, !end, !pvp => wilderness
+- white_spawn: white, !wild, !pvp, ow, => spawn
+- white_nether_hub: white, !wild, !pvp, net, => netspawn
+- white_end_portal white, end => end portal
+- white_border white, pvp, !end => border
+- purple_border purple, !wild, ow => border
+- admin: brown
+- magenta_119
 
 ## Tasks
 
 TODO:
-- DOCUMENTATION
-- switch from magenta for 119 to cyan
-
+none!
 
 IDEAS/IMPROVEMENTS:
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
-- all home carpets just show "home" when tping but there could be different types that show things like "farm", "project", "base" instead
-
+- switch from magenta for 119 to cyan
 
 COMPLETED:
+- DOCUMENTATION
+- all home carpets just show "home" when tping but there could be different types that show things like "farm", "project", "base" instead
 - categorize functions into folders - "special", "home", "transport" etc
     - maybe even put all carpets into "carpets" folder, then from there categorize further
     - would require A LOT of rewriting other things

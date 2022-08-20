@@ -21,6 +21,7 @@ class Carpet:
     def template(self, text):
         out = text
         out = out.replace('template_name', self.name)
+        out = out.replace('template_upper_name', self.name.upper())
         out = out.replace('template_colour', self.colour)
         out = out.replace('template_title', self.title)
         out = out.replace('template_tag_special', self.tag)
@@ -50,8 +51,6 @@ def main():
                 # For each filename we generate a new one
                 dirfile = os.path.join(dirpath, filename)
                 destfile = os.path.join(folder, filename)
-
-                print(dirfile, destfile)
 
                 # Read the contents of the template file and write it to the destination file after filling in the template variables
                 with open(dirfile, 'r') as file:
