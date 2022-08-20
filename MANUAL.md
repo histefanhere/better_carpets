@@ -12,7 +12,7 @@ These server carpets include the **white**, **yellow**, **purple** and **magenta
 execute as @a[tag=<tag>] in <dimension> run tp @s <coords>
 ```
 
-Where **<dimension>** is the dimension of the destination (the options are `overworld`, `the_nether` and `the_end`), **<coords>** is the coordinate of the destination and **<tag>** is one of the following:
+Where **\<dimension\>** is the dimension of the destination (the options are `overworld`, `the_nether` and `the_end`), **\<coords\>** is the coordinate of the destination and **\<tag\>** is one of the following:
 1. `bc_to_wilderness`
 2. `bc_to_central`
 3. `bc_to_nether_hub`
@@ -45,7 +45,7 @@ They also need a corresponding command block to teleport them to their home, the
 execute as @a[tag=bc_to_home] as @s[name=<name>] in overworld run tp @s <coords>
 ```
 
-Where **<name>** is the name of the player and **<coords>** is the coordinates of their home. Note that this command is colour-independent, meaning if the player wishes to change their carpet colour only the permission tag needs to be updated.
+Where **\<name\>** is the name of the player and **\<coords\>** is the coordinates of their home. Note that this command is colour-independent, meaning if the player wishes to change their carpet colour only the permission tag needs to be updated.
 
 For example, here is the command for teleporting _Gurtrude Belle_ to their mushroom house at spawn (given that they already have a `bc_HOME_BLACK` tag):
 
@@ -65,7 +65,7 @@ execute as @a[tag=bc_to_home,tag=bc_from_black] as ...
 
 ### Home carpet types
 
-Home carpets will by default display "teleporting to: home" to the player, which for a player with multiple home carpets can get confusing. However this can now be changed by giving the player a special tag of the form `bc_HOME_<color>_TYPE_<type>`, where **<color>** is the colour of the carpet and **<type>** is one of the following:
+Home carpets will by default display "teleporting to: home" to the player, which for a player with multiple home carpets can get confusing. However this can now be changed by giving the player a special tag of the form `bc_HOME_<color>_TYPE_<type>`, where **\<color\>** is the colour of the carpet and **\<type\>** is one of the following:
 
 - `FARM` which displays "farm"
 - `BASE` which displays "base"
@@ -84,7 +84,7 @@ The commands follow the format of:
 function to:<destination>
 ```
 
-where **<destination>** can be any one of the following:
+where **\<destination\>** can be any one of the following:
 
 - `admin`
 - `border`
