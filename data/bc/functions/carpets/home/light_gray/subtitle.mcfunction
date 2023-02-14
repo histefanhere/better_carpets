@@ -3,7 +3,7 @@
 # @WHO: player who entered carpet
 # @WHERE: ???
 
-execute if entity @s[tag=bc_HOME_LIGHT_GRAY_CUSTOM_TITLE] run tag @s add bc_titling
-execute if entity @s[tag=bc_HOME_LIGHT_GRAY_CUSTOM_TITLE] run tag @s add bc_title_light_gray
+tag @s add bc_titling
+tag @s add bc_title_light_gray
 
-execute unless entity @s[tag=bc_HOME_LIGHT_GRAY_CUSTOM_TITLE] run title @s subtitle [{"text":"Teleporting to: "},{"text":"home","bold":true,"color":"gray"}]
+title @s subtitle [{"text":"Teleporting to: "},{"text":"home","bold":true,"color":"gray"}]

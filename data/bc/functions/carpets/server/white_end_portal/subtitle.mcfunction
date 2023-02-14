@@ -3,7 +3,7 @@
 # @WHO: player who entered carpet
 # @WHERE: ???
 
-execute if entity @s[tag=bc_HOME_WHITE_END_PORTAL_CUSTOM_TITLE] run tag @s add bc_titling
-execute if entity @s[tag=bc_HOME_WHITE_END_PORTAL_CUSTOM_TITLE] run tag @s add bc_title_white_end_portal
+tag @s add bc_titling
+tag @s add bc_title_white_end_portal
 
-execute unless entity @s[tag=bc_HOME_WHITE_END_PORTAL_CUSTOM_TITLE] run title @s subtitle [{"text":"Teleporting to: "},{"text":"end portal","bold":true,"color":"white"}]
+title @s subtitle [{"text":"Teleporting to: "},{"text":"end portal","bold":true,"color":"white"}]

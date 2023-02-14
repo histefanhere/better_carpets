@@ -56,8 +56,19 @@ TODO:
 none!
 
 IDEAS/IMPROVEMENTS:
+- create a web interface for filling in a fourm of info, click "Generate Commands" and it pre-fills the home commands
+    - Inputs: username, carpet colour, carpet name, carpet destination (x, y, z, dimension)
+- adjustable carpet tp speed
+    - bc_slow, bc_normal, bc_medium, bc_fast, bc_instant tags
+    - just change the increment amount (can use a multiple of 12 max!)
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
 - switch from magenta for 119 to cyan
+- standardize tags
+    - get rid of the weird capitalization of bc_HOME_BLACK carpets
+    - standardize which tags are manually set by the player and which are auto-set by the datapack and which are "triggers"
+- make each carpet programmable in-game
+    - e.g. so the pack wouldn't need to be entirely updated for special server carpets like the 1.19 carpet
+    - `/data merge storage` for their behaviour
 
 COMPLETED:
 - DOCUMENTATION
