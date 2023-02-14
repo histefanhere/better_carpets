@@ -3,9 +3,7 @@
 # @WHO: player who entered carpet
 # @WHERE: ???
 
-title @s subtitle [{"text":"Teleporting to: "},{"text":"1.19 spawn","bold":true,"color":"light_purple"}]
+execute if entity @s[tag=bc_HOME_MAGENTA_119_CUSTOM_TITLE] run tag @s add bc_titling
+execute if entity @s[tag=bc_HOME_MAGENTA_119_CUSTOM_TITLE] run tag @s add bc_title_magenta_119
 
-execute as @s[tag=bc_HOME_MAGENTA_119_TYPE_FARM] run title @s subtitle [{"text":"Teleporting to: "},{"text":"farm","bold":true,"color":"light_purple"}]
-execute as @s[tag=bc_HOME_MAGENTA_119_TYPE_BASE] run title @s subtitle [{"text":"Teleporting to: "},{"text":"base","bold":true,"color":"light_purple"}]
-execute as @s[tag=bc_HOME_MAGENTA_119_TYPE_PROJECT] run title @s subtitle [{"text":"Teleporting to: "},{"text":"project","bold":true,"color":"light_purple"}]
-execute as @s[tag=bc_HOME_MAGENTA_119_TYPE_HOME2] run title @s subtitle [{"text":"Teleporting to: "},{"text":"home 2","bold":true,"color":"light_purple"}]
+execute unless entity @s[tag=bc_HOME_MAGENTA_119_CUSTOM_TITLE] run title @s subtitle [{"text":"Teleporting to: "},{"text":"1.19 spawn","bold":true,"color":"light_purple"}]

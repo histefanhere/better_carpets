@@ -3,6 +3,8 @@
 execute as @a[tag=bc_teleporting,tag=!bc_one_tick_delay] run function bc:registries/clear_tag
 execute as @a[tag=bc_one_tick_delay] run tag @s remove bc_one_tick_delay
 
+execute as @a[tag=bc_titling] run function bc:registries/clear_title_tag
+
 execute as @a[tag=bc_countdown] run function bc:countdown/tick
 
 # Handles the transfer of items between orange and lime carpets

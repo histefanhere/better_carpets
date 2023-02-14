@@ -3,9 +3,7 @@
 # @WHO: player who entered carpet
 # @WHERE: ???
 
-title @s subtitle [{"text":"Teleporting to: "},{"text":"template_title","bold":true,"color":"template_colour"}]
+execute if entity @s[tag=bc_HOME_template_upper_name_CUSTOM_TITLE] run tag @s add bc_titling
+execute if entity @s[tag=bc_HOME_template_upper_name_CUSTOM_TITLE] run tag @s add bc_title_template_name
 
-execute as @s[tag=bc_HOME_template_upper_name_TYPE_FARM] run title @s subtitle [{"text":"Teleporting to: "},{"text":"farm","bold":true,"color":"template_colour"}]
-execute as @s[tag=bc_HOME_template_upper_name_TYPE_BASE] run title @s subtitle [{"text":"Teleporting to: "},{"text":"base","bold":true,"color":"template_colour"}]
-execute as @s[tag=bc_HOME_template_upper_name_TYPE_PROJECT] run title @s subtitle [{"text":"Teleporting to: "},{"text":"project","bold":true,"color":"template_colour"}]
-execute as @s[tag=bc_HOME_template_upper_name_TYPE_HOME2] run title @s subtitle [{"text":"Teleporting to: "},{"text":"home 2","bold":true,"color":"template_colour"}]
+execute unless entity @s[tag=bc_HOME_template_upper_name_CUSTOM_TITLE] run title @s subtitle [{"text":"Teleporting to: "},{"text":"template_title","bold":true,"color":"template_colour"}]

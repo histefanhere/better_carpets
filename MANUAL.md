@@ -65,14 +65,19 @@ execute as @a[tag=bc_to_home,tag=bc_from_black] as ...
 
 ### Home carpet types
 
-Home carpets will by default display "teleporting to: home" to the player, which for a player with multiple home carpets can get confusing. However this can now be changed by giving the player a special tag of the form `bc_HOME_<color>_TYPE_<type>`, where **\<color\>** is the colour of the carpet and **\<type\>** is one of the following:
+Home carpets will by default display "teleporting to: home" to the player, which for a player with multiple home carpets can get confusing. However, we can customize this! It's a little confusing so bear with me. First, the player needs a special tag of the form `bc_HOME_<colour>_CUSTOM_TITLE`, where **\<colour\>** is the colour of the carpet. They also need a command block with the following command:
 
-- `FARM` which displays "farm"
-- `BASE` which displays "base"
-- `PROJECT` which displays "project"
-- `HOME2` which displays "home 2"
+```mcfunction
+execute as @a[tag=bc_title_<colour>,name=<name>] run title @s subtitle [{"text":"Teleporting to: "},{"text":"<title>","bold":true,"color":"<colour code>"}]
+```
 
-So for example, if Gurtrude has a pink carpet to her sugarcane farm she could have the `bc_HOME_PINK_TYPE_FARM` tag and the carpet would display "teleporting to: farm" when she stepped on pink!
+Where **\<colour\>** is the colour of the carpet, **\<name\>** is the name of the player, **\<title\>** is the title of the carpet and **\<colour code\>** is taken from the 3rd column of [this list in the code corresponding to the colour code](https://github.com/histefanhere/better_carpets/blob/main/data/bc/functions/generate_carpets.py#L74-L92). Not very pretty, I know! So for example, if Gurtrude has a pink carpet to her sugarcane farm she could have the `bc_HOME_PINK_CUSTOM_TITLE` tag and the following command block:
+
+```mcfunction
+execute as @a[tag=bc_title_pink,name=Xx_gurtrude_belle_xX] run title @s subtitle [{"text":"Teleporting to: "},{"text":"sugarcane farm","bold":true,"color":"#ed7999"}]
+```
+
+the carpet would display "teleporting to: sugarcane farm" when she stepped on pink!
 
 ### Cheaty admin teleportation
 
