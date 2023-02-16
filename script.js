@@ -80,8 +80,15 @@ fourm.addEventListener('submit', (e) => {
     alert.classList.add('alert', 'alert-success');
     alert.setAttribute('role', 'alert');
 
+    let dimensionOption = `in ${dimension} `;
+    if (dimension == 'overworld') {
+        dimensionOption = '';
+    }
+
     let output = `
-        <h2 class="alert-heading">Steps</h2>
+        <h3 class="alert-heading">Steps</h3>
+        <strong>TIP:</strong> You can quickly select a command by triple-clicking on it to select the whole command, then copy it with Ctrl+C.
+        <hr>
         First, make sure that the player has the correct tag applied to them that allows them to interact with the carpet. To do so, run the following command in the Minecraft chat:
         <br>
         <code>/tag ${username} add bc_HOME_${String(carpetColour).toUpperCase()}</code>
@@ -89,7 +96,7 @@ fourm.addEventListener('submit', (e) => {
         <br>
         Then create a command block with the following command which will teleport the player to the destination when they step on a ${carpet.name} carpet:
         <br>
-        <code>/execute as @a[tag=bc_from_${carpetColour}] as @s[name=${username}] in ${dimension} run tp @s ${x} ${y} ${z}</code>
+        <code>/execute as @a[tag=bc_from_${carpetColour}] as @s[name=${username}] ${dimensionOption} run tp @s ${x} ${y} ${z}</code>
         <br>
         <br>
     `;

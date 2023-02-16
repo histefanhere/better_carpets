@@ -56,11 +56,14 @@ TODO:
 none!
 
 IDEAS/IMPROVEMENTS:
-- create a web interface for filling in a fourm of info, click "Generate Commands" and it pre-fills the home commands
-    - Inputs: username, carpet colour, carpet name, carpet destination (x, y, z, dimension)
 - adjustable carpet tp speed
     - bc_slow, bc_normal, bc_medium, bc_fast, bc_instant tags
     - just change the increment amount (can use a multiple of 12 max!)
+- switch from:
+  `execute as @a[tag=bc_to_home,tag=bc_from_pink] as @s[name=Histefanhere] in overworld run tp @s 231 112 -825`
+  to
+  `execute as @a[tag=on_pink,name=Histefanhere] positioned 231 112 -825 run function bc:update`
+  - remove the need for the tags!!!!!
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
 - switch from magenta for 119 to cyan
 - standardize tags
@@ -71,6 +74,8 @@ IDEAS/IMPROVEMENTS:
     - `/data merge storage` for their behaviour
 
 COMPLETED:
+- create a web interface for filling in a fourm of info, click "Generate Commands" and it pre-fills the home commands
+    - Inputs: username, carpet colour, carpet name, carpet destination (x, y, z, dimension)
 - DOCUMENTATION
 - all home carpets just show "home" when tping but there could be different types that show things like "farm", "project", "base" instead
 - categorize functions into folders - "special", "home", "transport" etc
