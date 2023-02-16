@@ -3,11 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Better Carpets Command Generator</title>
+    <meta name="description" content="A simple website to generate the commands for creating player home carpets.">
+    <meta name="author" content="Histefanhere">
+    <meta name="keywords" content="minecraft, carpet, better carpets, teleport, command, generator">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container pt-5">
+      <h1>Better Carpets Command Generator</h1>
+
+      <p>Use this simple website to easily generate the commands for creating player home carpets. Just fill in the information and you're good to go!</p>
+
+      <!-- A bootstrap form for getting the player's username, carpet colour and coordinates -->
+      <form class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="mcusername" class="form-label">Username</label>
+          <input type="text" class="form-control" id="mcusername" placeholder="Enter the players username" required>
+          <div class="invalid-feedback">
+            Please provide a Minecraft username.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="carpetColour" class="form-label">Carpet Colour</label>
+          <select class="form-select" id="carpetColour" aria-label="Choose a carpet colour" required>
+            <option value="" selected>Select a carpet colour</option>
+            <!-- <option value="magenta">Magenta</option> -->
+            <option style="background-color: rgb(243, 183, 193);" value="pink">Pink</option>
+            <option style="background-color: lightgray;" value="light_gray">Light Gray</option>
+            <option style="background-color: aqua;" value="light_blue">Light Blue</option>
+            <option style="background-color: #40B5AD;" value="cyan">Cyan</option>
+            <option style="background-color: gray; color: white" value="gray">Gray</option>
+            <option style="background-color: #531df3	; color: white" value="blue">Blue</option>
+            <option style="background-color: #955335; color: white"value="brown">Brown</option>
+            <option style="background-color: #242424; color: white" value="black">Black</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a carpet colour.
+          </div>
+        </div>
+
+        <!-- Get the x, y, z coordinates via 3 inputs in a row -->
+        <p class="form-label">Destination</p>
+        <div class="row">
+          <div class="col-md mb-3">
+            <div class="input-group has-validation">
+              <span class="input-group-text">x</span>
+              <input type="number" step="any" class="form-control" id="x" placeholder="X coordinate" autocomplete="off" required>
+              <div class="invalid-feedback">
+                Please provide a X coordinate.
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-3">
+            <div class="input-group has-validation">
+              <span class="input-group-text">y</span>
+              <input type="number" step="any" class="form-control" id="y" placeholder="Y coordinate" autocomplete="off" required>
+              <div class="invalid-feedback">
+                Please provide a Y coordinate.
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-3">
+            <div class="input-group has-validation">
+              <span class="input-group-text">z</span>
+              <input type="number" step="any" class="form-control" id="z" placeholder="Z coordinate" autocomplete="off" required>
+              <div class="invalid-feedback">
+                Please provide a Z coordinate.
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-3">
+            <select class="form-select" id="dimension" aria-label="Choose a dimension" required>
+              <option value="overworld" selected>Overworld</option>
+              <option value="the_nether">Nether</option>
+              <option value="the_end">End</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Name of the carpet with a default value of "home" -->
+        <label for="carpetName" class="form-label">Carpet Name</label>
+        <input type="text" class="form-control mb-3" id="carpetName" placeholder="Enter the title of the carpet" value="home">
+        
+        <!-- A button to generate the commands -->
+        <button type="submit" class="btn btn-primary btn-lg">Generate Commands</button>
+      </form>
+  
+      <div class="mt-3" id="result"></div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

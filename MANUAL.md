@@ -29,6 +29,16 @@ execute as @a[tag=bc_to_central] in overworld run tp @s 0 64 0
 
 ## Home carpets
 
+Home carpets allow players to have custom warp destinations that they can teleport to using carpets. Currently, there are 8 different colours of carpets that can be used for this purpose: **pink**, **blue**, **light blue**, **gray**, **light gray**, **cyan**, **brown**, and **black**. 
+
+The process for creating home carpets is a little more involved than server carpets, so to simplify the process you can use this online tool to generate the command blocks for you: **https://histefanhere.github.io/better_carpets/**. Just follow the instructions and create the necessary command blocks.
+
+## Extra tips & tricks
+
+This is the extras section which you can for the most part ignore.
+
+### Manual home carpets
+
 For a player to be able to have a home carpet they first need to have the corresponding permission tag in the form of `bc_HOME_<colour>`, meaning the options are any of the following 9 different colours:
 - `bc_HOME_PINK`
 - `bc_HOME_BLUE`
@@ -53,9 +63,7 @@ For example, here is the command for teleporting _Gurtrude Belle_ to their mushr
 execute as @a[tag=bc_to_home] as @s[name=Xx_gurtrude_belle_xX] in overworld run tp @s -11 66 20
 ```
 
-## Extra tips & tricks
-
-### Multiple home carpets
+#### Multiple home carpets
 
 It's possible for a single player to have 2 or more different home carpets by specifying the colour of the carpet in the command as such (additionally, the player would need to have multiple `bc_HOME_<colour>` permission tags):
 
@@ -63,7 +71,7 @@ It's possible for a single player to have 2 or more different home carpets by sp
 execute as @a[tag=bc_to_home,tag=bc_from_black] as ...
 ```
 
-### Home carpet names
+#### Home carpet names
 
 Home carpets will by default display "teleporting to: home" to the player, which for a player with multiple home carpets can get confusing. However, we can customize this! It's a little confusing so bear with me. They need a command block with the following command:
 
