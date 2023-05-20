@@ -35,7 +35,55 @@ The process for creating home carpets is a little more involved than server carp
 
 ## Extra tips & tricks
 
-This is the extras section which you can for the most part ignore.
+There's more to this datapack than what's at the surface, so here's a few extra things you can do with it.
+
+### Teleporting speed
+
+By default, a teleportation takes 27 ticks to complete. If you're a pro user and want it to be faster, or you like looking at progress bars and want it to be slower, you can execute the following commmand:
+
+```mcfunction
+function bc:options/speed/<speed>
+```
+
+Where **\<speed\>** is one of the following:
+- `slow` (36 ticks)
+- `normal` (27 ticks)
+- `fast` (18 ticks)
+- `faster` (9 ticks)
+- `instant` (0 ticks)
+
+If you wish to run these from a command block, you can use the following command:
+
+```mcfunction
+execute as @p run function bc:options/speed/<speed>
+```
+
+### Cheaty admin teleportation
+
+Because come on, what admin _doesn't_ like teleporting around? better_carpets makes this bad habbit easier than ever by providing you with a set of functions that an admin can run from chat and be teleported to some key locations around the map, no carpet required.
+
+The commands follow the format of:
+
+```mcfunction
+function to:<destination>
+```
+
+where **\<destination\>** can be any one of the following:
+
+- `admin`
+- `border`
+- `central`
+- `end_portal`
+- `home`
+- `nether_hub`
+- `wilderness`
+- `119`
+
+So as an admin, getting to the end has never been easier, it's just one command away:
+
+```mcfunction
+function to:end_portal
+```
 
 ### Manual home carpets
 
@@ -87,30 +135,3 @@ execute as @a[tag=bc_title_pink,name=Xx_gurtrude_belle_xX] run title @s subtitle
 ```
 
 The carpet would display "teleporting to: sugarcane farm" when she stepped on pink!
-
-### Cheaty admin teleportation
-
-Because come on, what admin _doesn't_ like teleporting around? better_carpets makes this bad habbit easier than ever by providing you with a set of functions that an admin can run from chat and be teleported to some key locations around the map, no carpet required.
-
-The commands follow the format of:
-
-```mcfunction
-function to:<destination>
-```
-
-where **\<destination\>** can be any one of the following:
-
-- `admin`
-- `border`
-- `central`
-- `end_portal`
-- `home`
-- `nether_hub`
-- `wilderness`
-- `119`
-
-So as an admin, getting to the end has never been easier, it's just one command away:
-
-```mcfunction
-function to:end_portal
-```
