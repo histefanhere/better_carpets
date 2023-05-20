@@ -7,11 +7,10 @@ execute as @s[tag=on_white_end_portal] unless block ~ ~ ~ white_carpet run funct
 execute as @s[tag=on_white_border] unless block ~ ~ ~ white_carpet run function bc:carpets/server/white_border/leaving
 execute as @s[tag=on_purple_border] unless block ~ ~ ~ purple_carpet run function bc:carpets/server/purple_border/leaving
 execute as @s[tag=on_admin_brown] unless block ~ ~ ~ brown_carpet run function bc:carpets/server/admin_brown/leaving
-execute as @s[tag=on_magenta_119] unless block ~ ~ ~ magenta_carpet run function bc:carpets/server/magenta_119/leaving
 
 
 # Home carpets
-#  execute as @s[tag=on_magenta] unless block ~ ~ ~ magenta_carpet run function bc:magenta/leaving
+execute as @s[tag=on_magenta] unless block ~ ~ ~ magenta_carpet run function bc:carpets/home/magenta/leaving
 execute as @s[tag=on_light_blue] unless block ~ ~ ~ light_blue_carpet run function bc:carpets/home/light_blue/leaving
 execute as @s[tag=on_pink] unless block ~ ~ ~ pink_carpet run function bc:carpets/home/pink/leaving
 execute as @s[tag=on_gray] unless block ~ ~ ~ gray_carpet run function bc:carpets/home/gray/leaving

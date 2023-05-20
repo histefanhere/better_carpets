@@ -6,7 +6,7 @@ Once you've put this datapack in your datapacks folder, head on over to your min
 
 ## Server carpets
 
-These server carpets include the **white**, **yellow**, **purple** and **magenta** carpets. Don't worry, all the logic for which will TP you to where depending on your team has already been handled for you; all that needs to be done is to create 6 command blocks, one for each of the server destinations. The command looks like this:
+These server carpets include the **white**, **yellow**, and **purple** carpets. Don't worry, all the logic for which will TP you to where depending on your team has already been handled for you; all that needs to be done is to create 6 command blocks, one for each of the server destinations. The command looks like this:
 
 ```mcfunction
 execute as @a[tag=<tag>] in <dimension> run tp @s <coords>
@@ -19,7 +19,6 @@ Where **\<dimension\>** is the dimension of the destination (the options are `ov
 4. `bc_to_end_portal`
 5. `bc_to_border`
 6. `bc_to_admin` (the command control room)
-7. `bc_to_119` (1.19 spawn)
 
 For example, here is the command responsible for setting the location of the central spawn:
 
@@ -29,9 +28,9 @@ execute as @a[tag=bc_to_central] in overworld run tp @s 0 64 0
 
 ## Home carpets
 
-Home carpets allow players to have custom warp destinations that they can teleport to using carpets. Currently, there are 8 different colours of carpets that can be used for this purpose: **pink**, **blue**, **light blue**, **gray**, **light gray**, **cyan**, **brown**, and **black**. 
+Home carpets allow players to have custom warp destinations that they can teleport to using carpets. Currently, there are 8 different colours of carpets that can be used for this purpose: **magenta**, **pink**, **blue**, **light blue**, **gray**, **light gray**, **cyan**, **brown**, and **black**. 
 
-The process for creating home carpets is a little more involved than server carpets, so to simplify the process you can use this online tool to generate the command blocks for you: **https://histefanhere.github.io/better_carpets/**. Just follow the instructions and create the necessary command blocks.
+**The process for creating home carpets is a little more involved than server carpets, so to simplify the process you can use this online tool to generate the command blocks for you: https://histefanhere.github.io/better_carpets/. Just follow the instructions and create the necessary command blocks.**
 
 ## Extra tips & tricks
 
@@ -77,7 +76,6 @@ where **\<destination\>** can be any one of the following:
 - `home`
 - `nether_hub`
 - `wilderness`
-- `119`
 
 So as an admin, getting to the end has never been easier, it's just one command away:
 
@@ -88,6 +86,7 @@ function to:end_portal
 ### Manual home carpets
 
 For a player to be able to have a home carpet they first need to have the corresponding permission tag in the form of `bc_HOME_<colour>`, meaning the options are any of the following 9 different colours:
+- `bc_HOME_MAGENTA`
 - `bc_HOME_PINK`
 - `bc_HOME_BLUE`
 - `bc_HOME_LIGHT_BLUE`

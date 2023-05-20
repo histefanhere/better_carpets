@@ -7,12 +7,11 @@ execute as @s[tag=bc_title_white_end_portal] run tag @s remove bc_title_white_en
 execute as @s[tag=bc_title_white_border] run tag @s remove bc_title_white_border
 execute as @s[tag=bc_title_purple_border] run tag @s remove bc_title_purple_border
 execute as @s[tag=bc_title_admin_brown] run tag @s remove bc_title_admin_brown
-execute as @s[tag=bc_title_magenta_119] run tag @s remove bc_title_magenta_119
 
 # Home carpets
 execute as @s[tag=bc_title_pink] run tag @s remove bc_title_pink
 execute as @s[tag=bc_title_blue] run tag @s remove bc_title_blue
-# execute as @s[tag=bc_title_magenta] run tag @s remove bc_title_magenta
+execute as @s[tag=bc_title_magenta] run tag @s remove bc_title_magenta
 execute as @s[tag=bc_title_light_blue] run tag @s remove bc_title_light_blue
 execute as @s[tag=bc_title_gray] run tag @s remove bc_title_gray
 execute as @s[tag=bc_title_light_gray] run tag @s remove bc_title_light_gray

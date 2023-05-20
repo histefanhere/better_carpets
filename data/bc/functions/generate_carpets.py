@@ -78,12 +78,11 @@ carpets = [
     Carpet('white_border',          'server',   'white',            'borderlands',          'bc_to_border'),
     Carpet('purple_border',         'server',   'dark_purple',      'borderlands',          'bc_to_border'),
     Carpet('admin_brown',           'server',   '#784726',          'admin quarters',       'bc_to_admin'),
-    Carpet('magenta_119',           'server',   'light_purple',     '1.19 spawn',           'bc_to_119'),
 
     # Home carpets
     Carpet('pink',                  'home',     '#ed7999',          'home',                 'bc_to_home'),
     Carpet('blue',                  'home',     'blue',             'home',                 'bc_to_home'),
-    # Carpet('magenta', 'light_purple', 'home', 'bc_to_home'),
+    Carpet('magenta',               'home',     'light_purple',     'home',                 'bc_to_home'),
     Carpet('light_blue',            'home',     'aqua',             'home',                 'bc_to_home'),
     Carpet('gray',                  'home',     'dark_gray',        'home',                 'bc_to_home'),
     Carpet('light_gray',            'home',     'gray',             'home',                 'bc_to_home'),

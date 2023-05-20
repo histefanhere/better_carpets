@@ -7,12 +7,11 @@ execute unless predicate bc:sneaking as @s[tag=!on_white_end_portal] as @s[nbt={
 execute unless predicate bc:sneaking as @s[tag=!on_white_border] as @s[team=pvp,nbt=!{Dimension:"minecraft:the_end"}] if predicate bc:on_white run function bc:carpets/server/white_border/entering
 execute unless predicate bc:sneaking as @s[tag=!on_purple_border] as @s[team=!wilderness,nbt={Dimension:"minecraft:overworld"}] if predicate bc:on_purple run function bc:carpets/server/purple_border/entering
 execute unless predicate bc:sneaking as @s[tag=!on_admin_brown] as @s[tag=admin] if predicate bc:on_brown run function bc:carpets/server/admin_brown/entering
-execute unless predicate bc:sneaking as @s[tag=!on_magenta_119] as @s[team=!pvp,team=!wilderness] if predicate bc:on_magenta run function bc:carpets/server/magenta_119/entering
 
 
 # Home carpets
 # Note the special case that admins can't have brown home carpets
-# execute unless predicate bc:sneaking as @s[tag=!on_magenta] as @s[tag=bc_HOME_MAGENTA] if predicate bc:on_magenta run function bc:carpets/home/magenta/entering
+execute unless predicate bc:sneaking as @s[tag=!on_magenta] as @s[tag=bc_HOME_MAGENTA] if predicate bc:on_magenta run function bc:carpets/home/magenta/entering
 execute unless predicate bc:sneaking as @s[tag=!on_light_blue] as @s[tag=bc_HOME_LIGHT_BLUE] if predicate bc:on_light_blue run function bc:carpets/home/light_blue/entering
 execute unless predicate bc:sneaking as @s[tag=!on_pink] as @s[tag=bc_HOME_PINK] if predicate bc:on_pink run function bc:carpets/home/pink/entering
 execute unless predicate bc:sneaking as @s[tag=!on_gray] as @s[tag=bc_HOME_GRAY] if predicate bc:on_gray run function bc:carpets/home/gray/entering

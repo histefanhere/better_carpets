@@ -7,11 +7,10 @@ execute as @s[tag=on_white_end_portal] run function bc:carpets/server/white_end_
 execute as @s[tag=on_white_border] run function bc:carpets/server/white_border/action
 execute as @s[tag=on_purple_border] run function bc:carpets/server/purple_border/action
 execute as @s[tag=on_admin_brown] run function bc:carpets/server/admin_brown/action
-execute as @s[tag=on_magenta_119] run function bc:carpets/server/magenta_119/action
 
 
 # Home carpets
-# execute as @s[tag=on_magenta] run function bc:magenta/action
+execute as @s[tag=on_magenta] run function bc:carpets/home/magenta/action
 execute as @s[tag=on_light_blue] run function bc:carpets/home/light_blue/action
 execute as @s[tag=on_pink] run function bc:carpets/home/pink/action
 execute as @s[tag=on_gray] run function bc:carpets/home/gray/action
