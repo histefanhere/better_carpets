@@ -7,9 +7,9 @@
    - yellow
    - purple
    - brown
-   - magenta
 
 2. home carpets:
+   - magenta
    - light_blue
    - pink
    - gray
@@ -48,7 +48,6 @@
 - white_border white, pvp, !end => border
 - purple_border purple, !wild, ow => border
 - admin: brown
-- magenta_119
 
 ## Tasks
 
@@ -56,16 +55,18 @@ TODO:
 none!
 
 IDEAS/IMPROVEMENTS:
-- adjustable carpet tp speed
-    - bc_slow, bc_normal, bc_medium, bc_fast, bc_instant tags
-    - just change the increment amount (can use a multiple of 12 max!)
 - switch from:
   `execute as @a[tag=bc_to_home,tag=bc_from_pink] as @s[name=Histefanhere] in overworld run tp @s 231 112 -825`
   to
+  `execute as @a[tag=bc_from_pink,name=Histefanhere] run tp @s 231 112 -825`
+  or
+  `execute as @a[tag=bc_from_pink] as Histefanhere run tp @s 231 112 -825` (DOESN'T WORK)
+  or
   `execute as @a[tag=on_pink,name=Histefanhere] positioned 231 112 -825 run function bc:update`
+  how about
+  `execute as @a[name=Histefanhere] positioned 231 112 -825 run function bc:brown/update`
   - remove the need for the tags!!!!!
 - instead of saying "Teleporting to: *spawn*" maybe just say "*spawn*"?
-- switch from magenta for 119 to cyan
 - standardize tags
     - get rid of the weird capitalization of bc_HOME_BLACK carpets
     - standardize which tags are manually set by the player and which are auto-set by the datapack and which are "triggers"
@@ -74,6 +75,9 @@ IDEAS/IMPROVEMENTS:
     - `/data merge storage` for their behaviour
 
 COMPLETED:
+- adjustable carpet tp speed
+    - bc_slow, bc_normal, bc_medium, bc_fast, bc_instant tags
+    - just change the increment amount (can use a multiple of 12 max!)
 - create a web interface for filling in a fourm of info, click "Generate Commands" and it pre-fills the home commands
     - Inputs: username, carpet colour, carpet name, carpet destination (x, y, z, dimension)
 - DOCUMENTATION

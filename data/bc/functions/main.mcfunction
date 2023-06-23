@@ -7,9 +7,6 @@ execute as @a[tag=bc_titling] run function bc:registries/clear_title_tag
 
 execute as @a[tag=bc_countdown] run function bc:countdown/tick
 
-# Handles the transfer of items between orange and lime carpets
-execute if entity @a[tag=bc_item_dest] as @a[tag=on_orange] at @s as @a[tag=bc_item_dest] run tp @e[type=item,distance=..3] @s
-
 
 # Doesn't really matter where this is, might only change by 1 or 2 ticks how long the cooldown duration is
 execute as @a[tag=bc_cooldown] run scoreboard players remove @s carpet_cooldown 1
@@ -24,3 +21,6 @@ execute as @a[tag=!bc_on_carpet,tag=!bc_cooldown,tag=!bc_sneak_protection] at @s
 
 # Get rid of a player's sneak protection
 execute as @a[tag=bc_sneak_protection] at @s unless block ~ ~ ~ #bc:special_carpets run tag @s remove bc_sneak_protection
+
+# Handles the transfer of items between orange and lime carpets
+execute if entity @a[tag=bc_item_dest] as @a[tag=on_orange] at @s as @a[tag=bc_item_dest] run tp @e[type=item,distance=..3] @s
