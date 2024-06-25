@@ -75,6 +75,7 @@ IDEAS/IMPROVEMENTS:
     - `/data merge storage` for their behaviour
 
 COMPLETED:
+- fix error on server startup (Failed to load function bc:template/subtitle), caused by mc trying to load the template files
 - adjustable carpet tp speed
     - bc_slow, bc_normal, bc_medium, bc_fast, bc_instant tags
     - just change the increment amount (can use a multiple of 12 max!)

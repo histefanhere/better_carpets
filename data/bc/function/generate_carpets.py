@@ -50,7 +50,7 @@ def main():
             for filename in filenames:
                 # For each filename we generate a new one
                 dirfile = os.path.join(dirpath, filename)
-                destfile = os.path.join(folder, filename)
+                destfile = os.path.join(folder, filename.replace('.template', ''))
 
                 # Read the contents of the template file and write it to the destination file after filling in the template variables
                 with open(dirfile, 'r') as file:
